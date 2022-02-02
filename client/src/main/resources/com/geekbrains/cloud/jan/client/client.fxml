@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="444.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.202"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.geekbrains.cloud.jan.client.ClientController">
+    <ToolBar layoutX="5.0" prefHeight="35.0" prefWidth="1273.0">
+        <items>
+            <Button maxWidth="Infinity" focusTraversable="false" mnemonicParsing="false" onAction="#copyBtn" text="Скопировать">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </Button>
+            <Button maxWidth="Infinity" focusTraversable="false" mnemonicParsing="false" onAction="#upLoad" text="Переместить">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </Button>
+            <Button maxWidth="Infinity" focusTraversable="false" mnemonicParsing="false" onAction="#downLoad" text="Скачать с сервера">
+                <opaqueInsets>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </opaqueInsets>
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </Button>
+            <Button maxWidth="Infinity" focusTraversable="false" mnemonicParsing="false" text="Удалить">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </Button>
+            <Button maxWidth="Infinity" focusTraversable="false" mnemonicParsing="false" onAction="#exit" text="Выход" textAlignment="CENTER">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </Button>
+        </items>
+        <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+        </padding>
+    </ToolBar>
+
+    <ComboBox fx:id="disksBox" layoutX="5.0" layoutY="35.0" onAction="#selectionDiskAction" prefHeight="26.0" prefWidth="24.0">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding></ComboBox>
+    <TextField fx:id="textField" layoutX="55.0" layoutY="35.0" prefHeight="26.0" prefWidth="497.0" />
+    <Button layoutX="554.0" layoutY="35.0" focusTraversable="false" mnemonicParsing="false" onAction="#btnPathUpAction" prefHeight="26.0" prefWidth="76.0" text="Вверх" />
+
+    <TableView fx:id="clientView" accessibleRole="TABLE_COLUMN" layoutX="5.0" layoutY="65.0" prefHeight="347.0" prefWidth="635.0">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding></TableView>
+
+    <Separator layoutX="637.0" layoutY="19.0" orientation="VERTICAL" prefHeight="438.0" prefWidth="0.0" />
+
+    <TableView fx:id="serverView" accessibleRole="TABLE_COLUMN" layoutX="640.0" layoutY="65.0" prefHeight="347.0" prefWidth="635.0">
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+        </padding></TableView>
+
+    <Label fx:id="clientLabel" layoutX="5.0" layoutY="414.0" prefHeight="18.0" prefWidth="635.0" />
+    <Label fx:id="serverLabel" layoutX="643.0" layoutY="414.0" prefHeight="18.0" prefWidth="635.0" />
+    <ComboBox fx:id="disksBoxS" layoutX="643.0" layoutY="36.0" onAction="#selectionDiskActionS" prefHeight="26.0" prefWidth="24.0" />
+    <TextField fx:id="textFieldS" layoutX="704.0" layoutY="36.0" prefHeight="26.0" prefWidth="498.0" />
+    <Button layoutX="1214.0" layoutY="36.0" focusTraversable="false" onAction="#btnPathUpActionS" prefHeight="26.0" prefWidth="76.0" text="Вверх" />
+
+
+</AnchorPane>
