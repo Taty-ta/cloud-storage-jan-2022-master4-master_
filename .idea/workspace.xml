@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d6ad025-6fcf-43f9-b2a8-67622389d837" name="Default Changelist" comment="Java File Manager" />
+    <list default="true" id="5d6ad025-6fcf-43f9-b2a8-67622389d837" name="Default Changelist" comment="Java File Manager">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/cloud/jan/client/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/cloud/jan/client/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/cloud/jan/client/client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/cloud/jan/client/client.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/cloud/jan/client/ClientController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/cloud/jan/client/ClientController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/cloud/jan/client/client.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/cloud/jan/client/client.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/client-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/cloud-client.jar" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/cloud-client.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/cloud-server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/cloud-server.jar" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,6 +162,7 @@
       <workItem from="1643747292631" duration="3549000" />
       <workItem from="1643750949530" duration="410000" />
       <workItem from="1643827650177" duration="2471000" />
+      <workItem from="1643830528912" duration="4353000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 2. Nio">
       <created>1640630642652</created>
@@ -182,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643229738834</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Java File Manager">
+      <created>1643830626199</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1643830626199</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,12 +235,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/client/src/main/java/com/geekbrains/cloud/jan/client/ClientController.java</url>
-          <line>363</line>
+          <line>365</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/client/src/main/java/com/geekbrains/cloud/jan/client/ClientController.java</url>
-          <line>393</line>
+          <line>397</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>

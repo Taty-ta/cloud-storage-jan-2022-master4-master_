@@ -323,8 +323,8 @@ public class ClientController implements Initializable {
         });*/
     }
 
+    public void del(ActionEvent actionEvent) {
 
-    public void downLoad(ActionEvent actionEvent) {
         if (getSelectedFileName() == null) {
             Alert alert = new Alert(Alert.AlertType.ERROR, " Ни один файл не выбран", ButtonType.OK);
             alert.showAndWait();
@@ -334,7 +334,8 @@ public class ClientController implements Initializable {
             Path srcPath = Paths.get(getCurrentPath(), getSelectedFileName());// формируем путь к файлу откуда будем копировать
             Path dstPath = Paths.get(getCurrentPathS()).resolve(srcPath.getFileName());// скопируем в корневой каталог с именем как с клиента
             try {
-                Files.move(srcPath, dstPath);
+                Files.delete(srcPath);
+                updateList(Paths.get(getCurrentPath()));
                 updateListS(Paths.get(getCurrentPathS()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Не удалось скопировать файл", ButtonType.OK);
@@ -345,8 +346,9 @@ public class ClientController implements Initializable {
             Path srcPath = Paths.get(getCurrentPathS(), getSelectedFileName());// формируем путь к файлу откуда будем копировать
             Path dstPath = Paths.get(getCurrentPath()).resolve(srcPath.getFileName());// скопируем в корневой каталог с именем как с клиента
             try {
-                Files.move(srcPath, dstPath);
+                Files.delete(srcPath);
                 updateList(Paths.get(getCurrentPath()));
+                updateListS(Paths.get(getCurrentPathS()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Не удалось скопировать файл", ButtonType.OK);
                 alert.showAndWait();
@@ -366,6 +368,7 @@ public class ClientController implements Initializable {
             Path dstPath = Paths.get(getCurrentPathS()).resolve(srcPath.getFileName());// скопируем в корневой каталог с именем как с клиента
             try {
                 Files.move(srcPath, dstPath);
+                updateList(Paths.get(getCurrentPath()));
                 updateListS(Paths.get(getCurrentPathS()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Не удалось переместить файл", ButtonType.OK);
@@ -378,6 +381,7 @@ public class ClientController implements Initializable {
             try {
                 Files.move(srcPath, dstPath);
                 updateList(Paths.get(getCurrentPath()));
+                updateListS(Paths.get(getCurrentPathS()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Не удалось переместить файл", ButtonType.OK);
                 alert.showAndWait();
@@ -396,6 +400,7 @@ public class ClientController implements Initializable {
             Path dstPath = Paths.get(getCurrentPathS()).resolve(srcPath.getFileName());// скопируем в корневой каталог с именем как с клиента
             try {
                 Files.copy(srcPath, dstPath);
+                updateList(Paths.get(getCurrentPath()));
                 updateListS(Paths.get(getCurrentPathS()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Не удалось скопировать файл", ButtonType.OK);
@@ -407,11 +412,15 @@ public class ClientController implements Initializable {
             Path dstPath = Paths.get(getCurrentPath()).resolve(srcPath.getFileName());// скопируем в корневой каталог с именем как с клиента
             try {
                 Files.copy(srcPath, dstPath);
+
                 updateList(Paths.get(getCurrentPath()));
+                updateListS(Paths.get(getCurrentPathS()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.ERROR, " Не удалось скопировать файл", ButtonType.OK);
                 alert.showAndWait();
             }
         }
     }
+
+
 }
